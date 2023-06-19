@@ -1,0 +1,71 @@
+.siteHeader{
+    padding: 8px 16px;
+    
+}
+
+.siteHeader >h1{
+    font-size: 32px;
+}
+.calendar{
+    background: white;
+    margin: 16px;
+    border-radius: 24px;
+    color: #333;
+    
+}
+.calender-header{
+    text-align: center;/*居中*/
+    padding:  16px 0;
+    font-size: 18px;
+}
+.calender-weekdays{
+    display: flex;
+    /* margin:0 8px ; */
+}
+.calender-weekdays >li{
+    /* padding: 16px; */
+    width: 14.2857%;
+    text-align: center;
+}
+
+.calender-days{
+    display: flex;
+    flex-wrap: wrap;/*可以换行*/
+}
+.calender-days >li{
+    width: 14.2857%;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;/*行高和高一样，就可以上下居中*/
+}
+.calender-days-today {
+    background: #fed32c;
+    border-radius: 8px;
+}
+.calender-days-selected{
+    outline: 2px solid #fed32c;/*不占空间的边框*/
+    border-radius: 8px;
+}
+.calender-days >li.calender-days-disabled{
+    color: #999;
+}
+.calender-actions{
+    display: flex;
+    justify-content: space-between;/*空的地方在中间*/
+    padding: 0 0 10px;
+}
+.calender-actions button{
+    font-size: 12px;
+    padding: 0 8px;
+}
+.calender-actions-left{
+    margin: 0 14px;
+}
+
+.calender-actions-right{
+    display: flex;/*去掉两按钮之间的空隙*/
+    margin: 0 14px;
+}
+
+
+
