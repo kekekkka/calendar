@@ -64,6 +64,11 @@ function render(time) {
                 li.classList.add("calender-days-selected")
                 selectedLi = li
             }
+            const key=`${year}-${month}-${i}`
+           const events= window.data[key]
+            if(events){
+                li.classList.add('calender-days-hasEvents')
+            }
             days.append(li)
             n+=1
         }
